@@ -1,78 +1,72 @@
-# 📚 Sorting Algorithms Collection 🚀
+# 🧹 Bubble Sort Algorithm
 
-Welcome to this repository where several fundamental **sorting algorithms** are implemented in clean, efficient C++ (or your language of choice). This project is perfect for learners aiming to master core algorithm concepts and time complexity analysis. 
-
----
-
-## 📋 What's Inside?
-
-This repo contains implementations of classic sorting algorithms including but not limited to:
-
-- **Bubble Sort** 🟠 — Simple comparison-based sort great for beginners.
-- **Selection Sort** 🔍 — Efficient in terms of swaps, intuitive logic.
-- **Insertion Sort** ✍️ — Builds a sorted array one item at a time.
-- **Merge Sort** 🔀 — Divide and conquer algorithm with \(O(n \log n)\) complexity.
-- **Quick Sort** ⚡ — Fast average-case sorting using pivot partitioning.
-- **Heap Sort** 🏗️ — Utilizes binary heaps for efficient sorting.
-- **Counting Sort** 🧮 — Non-comparison sort ideal for limited ranges.
-- **Radix Sort** 🔢 — Sorts numbers digit by digit for linear time complexity.
+Welcome to the Bubble Sort playground! This is a simple yet fundamental sorting algorithm that every programmer should understand deeply to build a strong foundation in Data Structures and Algorithms (DSA). 🚀
 
 ---
 
-## 🔥 Why Learn These?
+## What is Bubble Sort? 🔍
 
-- Understand the **fundamental paradigms** of sorting.
-- Analyze **time and space complexities**, e.g., \(O(n^2)\) bubble vs \(O(n \log n)\) mergesort.
-- Explore **trade-offs** like stability, memory use, and in-place sorting.
-- Prepare for **coding interviews**, competitive programming, and software engineering challenges.
-- Build a **foundation** for advanced algorithm design and data structure mastery.
+Bubble Sort compares adjacent elements and swaps them if they are in the wrong order, making the largest/smallest "bubble" to the end of the array on each pass.
 
----
-
-## 📈 Performance Overview
-
-| Algorithm       | Time Complexity (Best) | Time Complexity (Average/Worst) | Space Complexity  | Stability  |
-|-----------------|------------------------|---------------------------------|-------------------|------------|
-| Bubble Sort 🟠  | \(O(n)\)               | \(O(n^2)\)                      | \(O(1)\)          | Stable     |
-| Selection Sort 🔍 | \(O(n^2)\)             | \(O(n^2)\)                      | \(O(1)\)          | Not Stable |
-| Insertion Sort ✍️ | \(O(n)\)               | \(O(n^2)\)                      | \(O(1)\)          | Stable     |
-| Merge Sort 🔀   | \(O(n \log n)\)        | \(O(n \log n)\)                 | \(O(n)\)          | Stable     |
-| Quick Sort ⚡   | \(O(n \log n)\)        | \(O(n^2)\)                      | \(O(\log n)\)     | Not Stable |
-| Heap Sort 🏗️   | \(O(n \log n)\)        | \(O(n \log n)\)                 | \(O(1)\)          | Not Stable |
-| Counting Sort 🧮 | \(O(n + k)\)            | \(O(n + k)\)                    | \(O(k)\)          | Stable     |
-| Radix Sort 🔢   | \(O(d \times (n + k))\) | \(O(d \times (n + k))\)         | \(O(n + k)\)      | Stable     |
+- Simple to understand & implement
+- Best for small or nearly sorted datasets
+- Stable sorting algorithm (preserves order of equal elements) ✅
 
 ---
 
-## 🚀 Getting Started
+## How Bubble Sort Works 🔄
 
-Each algorithm is implemented as a separate function/module with easy-to-follow code and clear comments. Feel free to:
-
-- Use the code directly in your projects.
-- Modify to experiment with optimizations.
-- Learn from the detailed explanations in the comments.
-- Benchmark them with different datasets to appreciate their strengths/weaknesses.
+1. Compare pairs of adjacent elements
+2. Swap if the left element is greater
+3. Repeat until no swaps needed (array is sorted!)
+4. Each pass places the next largest element at its correct position
 
 ---
 
-## 📖 How to Contribute
+## Time Complexity ⏳
 
-Contributions are very welcome! Whether:
-
-- Adding new sorting techniques.
-- Improving current code clarity or efficiency.
-- Writing tests or documentation.
-- Sharing real-world applications or comparisons.
-
-Please fork, do your changes, and create a pull request.
+| Case        | Time Complexity | Explanation                              |
+|-------------|-----------------|------------------------------------------|
+| Best Case   | O(n)            | Array already sorted, stops early        |
+| Average Case| O(n²)           | Random array, many comparisons & swaps  |
+| Worst Case  | O(n²)           | Array sorted in reverse order             |
 
 ---
 
-## 🙌 Thanks for Visiting!
+## Space Complexity 💾
 
-Keep iterating, keep learning — sorting algorithms form a critical pillar for coding excellence and algorithmic thinking. Happy coding! 💻✨
+- **O(1)** - In-place algorithm, only uses a temporary variable to swap elements
 
 ---
 
-*Made with ❤️ and passion for algorithms.*
+## Why Bubble Sort? Why Not? 🤔
 
+- **Advantages**: Super simple, easy to teach, stable sort  
+- **Disadvantages**: Inefficient for large datasets, lots of swaps compared to other sorts
+
+---
+
+## Advanced Interview Questions 💡
+
+1. Explain how Bubble Sort works with an example.  
+2. What is the time complexity in all cases and why?  
+3. What optimizations can be done to Bubble Sort?  
+4. Is Bubble Sort stable? Explain stability.  
+5. How is Bubble Sort different from Selection Sort and Insertion Sort?  
+6. When is Bubble Sort appropriate to use in real-world scenarios?  
+7. Can Bubble Sort be adapted for linked lists? How?  
+8. Discuss the space complexity of Bubble Sort and why it’s considered in-place.  
+9. What are the pros and cons of Bubble Sort compared to other sorting algorithms?  
+10. Can you write Bubble Sort code that stops early if already sorted?  
+
+---
+
+## Credits & References 📚
+
+- Bubble Sort Algorithm & Concepts - GeeksforGeeks, Tutorialspoint  
+- Complexity Analysis - BuiltIn, FreeCodeCamp  
+- Interview Questions - InterviewBit, Simplilearn  
+
+---
+
+Happy Sorting! 🎉 Keep practicing and exploring more efficient algorithms like Merge Sort and Quick Sort to level up your skills! 💪✨
