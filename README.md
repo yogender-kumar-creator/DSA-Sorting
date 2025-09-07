@@ -2,6 +2,7 @@
 Selection sort is an easy-to-understand sorting algorithm great for learning and working with small datasets. Let's dive into it! 💡
 
 How It Works 🧐
+
 1.Divides the array into sorted and unsorted parts.
 
 2.Repeatedly picks the smallest element from the unsorted part 🥇.
