@@ -13,6 +13,7 @@ How It Works 🧐
 4.Repeats until the entire array is sorted.
 
 
+
 ✨ Secret Things to Remember ✨
 
 🔍 Comparisons: Makes about n(n-1)/2 comparisons overall, regardless of input.
